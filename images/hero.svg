@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 460" role="img" aria-label="Fachada de la Clínica Vitalis">
+  <rect width="560" height="460" rx="24" fill="#dcefea"/>
+  <circle cx="420" cy="130" r="110" fill="#b8d8d1"/>
+  <circle cx="110" cy="90" r="40" fill="#c9e5df"/>
+  <rect x="120" y="170" width="320" height="230" fill="#fff"/>
+  <rect x="100" y="148" width="360" height="30" rx="6" fill="#0f766e"/>
+  <rect x="248" y="70" width="64" height="64" rx="14" fill="#e8a33d"/>
+  <path d="M272 86h16v14h14v16h-14v14h-16v-14h-14v-16h14z" fill="#fff" transform="translate(0 -6)"/>
+  <rect x="140" y="200" width="70" height="60" rx="6" fill="#dcefea"/>
+  <rect x="350" y="200" width="70" height="60" rx="6" fill="#dcefea"/>
+  <rect x="140" y="290" width="70" height="60" rx="6" fill="#dcefea"/>
+  <rect x="350" y="290" width="70" height="60" rx="6" fill="#dcefea"/>
+  <path d="M248 400v-86a32 32 0 0 1 64 0v86z" fill="#0f766e"/>
+  <circle cx="300" cy="360" r="3.5" fill="#e8a33d"/>
+  <path d="M0 400h560v36a24 24 0 0 1-24 24H24A24 24 0 0 1 0 436z" fill="#12303a"/>
+  <ellipse cx="80" cy="385" rx="30" ry="42" fill="#3f9b8f"/>
+  <ellipse cx="108" cy="395" rx="20" ry="30" fill="#0f766e"/>
+  <ellipse cx="480" cy="385" rx="30" ry="42" fill="#3f9b8f"/>
+  <ellipse cx="452" cy="395" rx="20" ry="30" fill="#0f766e"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="medico-1">
+  <rect width="200" height="200" fill="#dcefea"/>
+  
+  <path d="M30 200c0-42 30-62 70-62s70 20 70 62z" fill="#fff"/>
+  <path d="M82 140l18 32 18-32z" fill="#0f766e"/>
+  <rect x="88" y="112" width="24" height="32" rx="8" fill="#e0ac82"/>
+  <circle cx="100" cy="85" r="34" fill="#e0ac82"/>
+  <path d="M65 82a35 35 0 0 1 70 0c-8-14-22-18-35-18s-27 4-35 18z" fill="#2b1d16"/>
+  <circle cx="88" cy="88" r="3" fill="#12303a"/><circle cx="112" cy="88" r="3" fill="#12303a"/>
+  <path d="M91 102q9 8 18 0" fill="none" stroke="#12303a" stroke-width="2.500" stroke-linecap="round"/>
+  
+</svg>

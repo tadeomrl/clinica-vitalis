@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clínica Vitalis: medicina general, odontología y psicología. Agenda tu cita en línea.">
+    <title>Clínica Vitalis | Salud y Bienestar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="encabezado">
+    <div class="encabezado-interior">
+        <a href="#inicio" class="logo">Clínica Vitalis</a>
+        <nav aria-label="Principal">
+            <a href="#servicios">Servicios</a>
+            <a href="#especialistas">Especialistas</a>
+            <a href="#cita" class="nav-cta">Agendar cita</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="inicio" class="hero">
+        <div class="hero-texto">
+            <h1>Tu salud, en manos que te escuchan.</h1>
+            <p>Medicina general, odontología y psicología en un solo lugar, con citas que tú eliges en minutos.</p>
+            <div class="hero-botones">
+                <a href="#cita" class="boton">Agendar una cita</a>
+                <a href="#servicios" class="boton boton-claro">Ver servicios</a>
+            </div>
+        </div>
+        <div class="hero-imagen">
+            <img src="images/hero.svg" alt="Fachada de la Clínica Vitalis" width="560" height="460">
+            <aside class="horario" aria-label="Horario de atención">
+                <h2>Horario de atención</h2>
+                <dl>
+                    <div><dt>Lunes a viernes</dt><dd>9:00 – 18:00</dd></div>
+                    <div><dt>Sábados</dt><dd>9:00 – 14:00</dd></div>
+                    <div><dt>Domingos</dt><dd>Cerrado</dd></div>
+                </dl>
+                <p>Consultas de 1 hora. Llega 10 minutos antes.</p>
+            </aside>
+        </div>
+    </section>
+
+    <section id="servicios" class="seccion">
+        <div class="contenedor">
+            <h2>Servicios</h2>
+            <ul class="servicios-lista">
+                <li><img class="icono" src="images/icono-general.svg" alt="" width="48" height="48"><h3>Medicina general</h3><p>Consulta, diagnóstico y seguimiento de padecimientos comunes para toda la familia.</p></li>
+                <li><img class="icono" src="images/icono-chequeo.svg" alt="" width="48" height="48"><h3>Chequeo preventivo</h3><p>Revisión completa para detectar a tiempo y cuidar lo que importa.</p></li>
+                <li><img class="icono" src="images/icono-dental.svg" alt="" width="48" height="48"><h3>Odontología</h3><p>Limpieza, revisión y tratamientos dentales en un ambiente tranquilo.</p></li>
+                <li><img class="icono" src="images/icono-psicologia.svg" alt="" width="48" height="48"><h3>Psicología</h3><p>Terapia individual con un espacio seguro para hablar sin prisa.</p></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="especialistas" class="seccion seccion-suave">
+        <div class="contenedor">
+            <h2>Nuestros especialistas</h2>
+            <div class="especialistas-grid">
+                <article class="especialista">
+                    <img class="foto-medico" src="images/medico-1.svg" alt="" width="96" height="96">
+                    <h3>Dr. Alejandro Martínez</h3>
+                    <p>Medicina general</p>
+                </article>
+                <article class="especialista">
+                    <img class="foto-medico" src="images/medico-2.svg" alt="" width="96" height="96">
+                    <h3>Dra. Sofía Hernández</h3>
+                    <p>Odontología</p>
+                </article>
+                <article class="especialista">
+                    <img class="foto-medico" src="images/medico-3.svg" alt="" width="96" height="96">
+                    <h3>Dr. Daniel Torres</h3>
+                    <p>Psicología</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="cita" class="seccion">
+        <div class="contenedor">
+            <h2>Agenda tu cita</h2>
+            <div class="cita-grid">
+                <form id="formularioCita" novalidate>
+                    <div class="campo">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" autocomplete="name" required minlength="3">
+                        <small class="error" data-error="nombre"></small>
+                    </div>
+                    <div class="campo">
+                        <label for="telefono">Teléfono (10 dígitos)</label>
+                        <input type="tel" id="telefono" name="telefono" inputmode="numeric" autocomplete="tel" maxlength="10" required>
+                        <small class="error" data-error="telefono"></small>
+                    </div>
+                    <div class="campo">
+                        <label for="servicio">Servicio</label>
+                        <select id="servicio" name="servicio" required>
+                            <option value="">Selecciona un servicio</option>
+                            <option>Medicina general</option>
+                            <option>Chequeo preventivo</option>
+                            <option>Odontología</option>
+                            <option>Psicología</option>
+                        </select>
+                        <small class="error" data-error="servicio"></small>
+                    </div>
+                    <div class="fila">
+                        <div class="campo">
+                            <label for="fecha">Fecha</label>
+                            <input type="date" id="fecha" name="fecha" required>
+                            <small class="error" data-error="fecha"></small>
+                        </div>
+                        <div class="campo">
+                            <label for="hora">Hora</label>
+                            <select id="hora" name="hora" required disabled>
+                                <option value="">Elige primero la fecha</option>
+                            </select>
+                            <small class="error" data-error="hora"></small>
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label for="notas">Motivo de la consulta (opcional)</label>
+                        <textarea id="notas" name="notas" rows="3" maxlength="200"></textarea>
+                    </div>
+                    <div class="acciones">
+                        <button type="submit" class="boton">Agendar cita</button>
+                        <button type="button" id="limpiarCita" class="boton boton-claro">Limpiar</button>
+                    </div>
+                </form>
+
+                <div class="cita-lateral">
+                    <div id="confirmacion" aria-live="polite"></div>
+                    <div id="listaCitas"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="pie">
+    <p>© 2026 Clínica Vitalis. Todos los derechos reservados.</p>
+</footer>
+
+<div id="aviso" class="aviso" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
